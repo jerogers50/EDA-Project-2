@@ -13,7 +13,7 @@ PM25Data <- tapply(MD$Emissions, MD$year, sum)
 
 ## Plot and save barplot to illustrate trend in emissions from 1999 t0 2008 for Maryland
 png("Plot2.png")
-barplot(totalPM25ByYear, names.arg=names(totalPM25ByYear), col="blue",
+barplot(PM25Data, names.arg=names(PM25Data), col="blue",
         main='Total Emission in Baltimore City, MD', 
         xlab='Year', ylab=expression('PM'[2.5]))
 dev.off()
